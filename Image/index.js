@@ -24,7 +24,6 @@ export default class Image extends React.Component {
 
 		const thisImage = this.refs.image
 
-		// if image rendered to fast from server, onload won't fire on client
 		if (thisImage.complete && !this.state.imageLoaded) this.handleImageLoad()
 
 		if (responsive) {
